@@ -1080,3 +1080,45 @@ a {
   mix-blend-mode: normal !important;
   opacity: 1 !important;
 }
+
+/* =================================
+   FIX GAMBAR AGAR TAMPIL FULL
+================================= */
+
+/* Gambar kategori utama */
+.category-image {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important;
+  object-position: center;
+  display: block;
+}
+
+/* Gambar paket Rising dan Montage */
+.package-card {
+  overflow: hidden;
+}
+
+.package-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: contain !important;
+  object-position: center;
+  display: block;
+}
+
+/* Gambar banner Rank dan Gendong */
+.service-banner img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain !important;
+  object-position: center;
+  display: block;
+}
