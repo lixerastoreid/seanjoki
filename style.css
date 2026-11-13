@@ -1039,11 +1039,3 @@ a {
 .service-banner img {
   background-color: transparent;
 }
-
-.category-image img,
-.package-card img,
-.service-banner img {
-  filter: brightness(1.8) saturate(1.5) contrast(1.1);
-  mix-blend-mode: normal !important;
-}
- 
