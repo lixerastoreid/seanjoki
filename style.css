@@ -1023,3 +1023,19 @@ a {
     drop-shadow(0 15px 25px rgba(0, 255, 130, .2));
 }
 
+
+/* FIX GAMBAR SEMUA HALAMAN */
+.category-image img,
+.package-card img,
+.service-banner img {
+  mix-blend-mode: multiply !important;
+  filter: brightness(1.8) saturate(1.5) contrast(1.1);
+  object-fit: contain;
+}
+
+/* Background gambar tetap menyatu */
+.category-image,
+.package-card img,
+.service-banner img {
+  background-color: transparent;
+}
