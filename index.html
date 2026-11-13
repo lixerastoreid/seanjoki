@@ -358,60 +358,76 @@
   </section>
   
   <!-- ================= JOKI MONTAGE ================= -->
-  <section class="page service-page" id="page-montage">
-    <div class="page-heading">
-      <button class="back-btn" onclick="showPage('home')">← Kembali</button>
-      <span class="section-kicker">SERVICE 04</span>
-      <h1>JOKI <span>MONTAGE</span></h1>
-      <p>Pilih hero untuk montage kamu.</p>
-    </div>
+  
+<!-- ================= JOKI MONTAGE ================= -->
+<section class="page service-page" id="page-montage">
+  <div class="page-heading">
+    <button class="back-btn" onclick="showPage('home')">← Kembali</button>
+    <span class="section-kicker">SERVICE 04</span>
+    <h1>JOKI <span>MONTAGE</span></h1>
+    <p>Pilih hero untuk montage kamu.</p>
+  </div>
 
-    <div class="package-grid montage-grid">
-      <button class="package-card" onclick="selectPackage('montage','Joki Montage All Hero',20000,'jokimontage.jpg',this)">
-        <img src="jokimontage.jpg" alt="All Hero Montage">
-        <span class="package-content">
-          <strong>All Hero</strong>
-          <b>Rp 20.000</b>
-        </span>
-      </button>
+  <div class="package-grid montage-grid">
 
-      <button class="package-card" onclick="selectPackage('montage','Joki Montage Fanny - Free Edit',50000,'jokimontage.jpg',this)">
-        <img src="jokimontage.jpg" alt="Fanny Montage">
-        <span class="package-content">
-          <strong>Fanny</strong>
-          <small>FREE EDIT</small>
-          <b>Rp 50.000</b>
-        </span>
-      </button>
+    <!-- ALL HERO -->
+    <button class="package-card"
+      onclick="selectPackage('montage','Joki Montage All Hero',20000,'allhero.jpg',this)">
+      <img src="allhero.jpg" alt="All Hero Montage">
+      <span class="package-content">
+        <strong>All Hero</strong>
+        <b>Rp 20.000</b>
+      </span>
+    </button>
 
-      <button class="package-card" onclick="selectPackage('montage','Joki Montage Ling - Free Edit',50000,'jokimontage.jpg',this)">
-        <img src="jokimontage.jpg" alt="Ling Montage">
-        <span class="package-content">
-          <strong>Ling</strong>
-          <small>FREE EDIT</small>
-          <b>Rp 50.000</b>
-        </span>
-      </button>
+    <!-- FANNY -->
+    <button class="package-card"
+      onclick="selectPackage('montage','Joki Montage Fanny - Free Edit',50000,'fanny.jpg',this)">
+      <img src="fanny.jpg" alt="Fanny Montage">
+      <span class="package-content">
+        <strong>Fanny</strong>
+        <small>FREE EDIT</small>
+        <b>Rp 50.000</b>
+      </span>
+    </button>
 
-      <button class="package-card" onclick="selectPackage('montage','Joki Montage Lancelot - Free Edit',50000,'jokimontage.jpg',this)">
-        <img src="jokimontage.jpg" alt="Lancelot Montage">
-        <span class="package-content">
-          <strong>Lancelot</strong>
-          <small>FREE EDIT</small>
-          <b>Rp 50.000</b>
-        </span>
-      </button>
-    </div>
+    <!-- LING -->
+    <button class="package-card"
+      onclick="selectPackage('montage','Joki Montage Ling - Free Edit',50000,'Ling.jpg',this)">
+      <img src="ling.jpg" alt="Ling Montage">
+      <span class="package-content">
+        <strong>Ling</strong>
+        <small>FREE EDIT</small>
+        <b>Rp 50.000</b>
+      </span>
+    </button>
 
-    <div class="selected-summary" id="montageSummary">
-      <span>PAKET TERPILIH</span>
-      <strong id="montageSelectedName">Belum memilih paket</strong>
-      <b id="montageSelectedPrice">Rp 0</b>
-      <button class="primary-btn full-btn" onclick="preparePackageOrder('montage')">Lanjutkan Pesanan ↗</button>
-    </div>
-  </section>
+    <!-- LANCELOT -->
+    <button class="package-card"
+      onclick="selectPackage('montage','Joki Montage Lancelot - Free Edit',50000,'lancelot.jpg',this)">
+      <img src="lancelot.jpg" alt="Lancelot Montage">
+      <span class="package-content">
+        <strong>Lancelot</strong>
+        <small>FREE EDIT</small>
+        <b>Rp 50.000</b>
+      </span>
+    </button>
 
-</main>
+  </div>
+
+  <div class="selected-summary" id="montageSummary">
+    <span>PAKET TERPILIH</span>
+    <strong id="montageSelectedName">Belum memilih paket</strong>
+    <b id="montageSelectedPrice">Rp 0</b>
+    <button class="primary-btn full-btn"
+      onclick="preparePackageOrder('montage')">
+      Lanjutkan Pesanan ↗
+    </button>
+  </div>
+</section>
+  
+
+      
 
 <!-- ================= FORM PEMESANAN ================= -->
 <div class="modal-overlay" id="orderModal">
