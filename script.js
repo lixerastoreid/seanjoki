@@ -793,3 +793,40 @@ showPage("home");
 console.log("JOKI MLBB WEBSITE BERHASIL DIMUAT!");
 console.log("Sistem kalkulator, paket, dan order aktif.");
 
+/* FIX EMOJI BINTANG 🌟 */
+
+// Ubah label rank menjadi emoji bintang
+getRankLabel = function(data) {
+  if (data.tier) {
+    return `${data.rank} ${tierNames[data.tier]} - ${data.star} 🌟`;
+  }
+  return `${data.rank} ${data.star} 🌟`;
+};
+
+// Ubah semua pilihan bintang menjadi emoji
+const oldConfigureStarField = configureStarField;
+
+configureStarField = function(id, rank, defaultValue) {
+  oldConfigureStarField(id, rank, defaultValue);
+
+  const field = document.getElementById(id);
+
+  if (field && field.tagName === "SELECT") {
+    Array.from(field.options).forEach(option => {
+      option.textContent = option.value + " 🌟";
+    });
+  }
+};
+
+// Perbarui tampilan pilihan yang sudah ada
+["startStar", "endStar", "gendongStartStar", "gendongEndStar"]
+.forEach(id => {
+  const field = document.getElementById(id);
+
+  if (field && field.tagName === "SELECT") {
+    Array.from(field.options).forEach(option => {
+      option.textContent = option.value + " 🌟";
+    });
+  }
+});
+
