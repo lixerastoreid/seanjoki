@@ -1122,3 +1122,86 @@ a {
   object-position: center;
   display: block;
 }
+
+/* =================================
+   GLOBAL IMAGE FIX - JOKI MLBB
+================================= */
+
+/* Semua gambar */
+img {
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Kategori beranda */
+.category-image {
+    background: transparent !important;
+    overflow: hidden;
+}
+
+.category-image img {
+    width: 100%;
+    height: 210px;
+    object-fit: contain !important;
+    object-position: center;
+    background: transparent !important;
+    padding: 0;
+    display: block;
+}
+
+/* Gambar paket Rising dan Montage */
+.package-card {
+    overflow: hidden;
+    background: rgba(8, 35, 23, 0.85) !important;
+}
+
+.package-card > img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: contain !important;
+    object-position: center;
+    background: transparent !important;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+/* Banner layanan */
+.service-banner {
+    overflow: hidden;
+    background: rgba(10, 42, 28, 0.8) !important;
+}
+
+.service-banner img {
+    width: 125px;
+    height: 150px;
+    object-fit: contain !important;
+    background: transparent !important;
+}
+
+/* Semua gambar tidak boleh terpotong */
+.hero-art img,
+.hero-logo,
+.footer-logo {
+    object-fit: contain !important;
+}
+
+/* Background kartu tetap hijau */
+.category-card,
+.package-card,
+.calculator-card,
+.selected-summary {
+    background-color: rgba(8, 35, 23, 0.9) !important;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+    .category-image img {
+        height: 190px;
+    }
+
+    .package-card > img {
+        height: 210px;
+    }
+}
