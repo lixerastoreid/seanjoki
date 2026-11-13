@@ -1039,3 +1039,44 @@ a {
 .service-banner img {
   background-color: transparent;
 }
+
+/* =================================
+   FIX FINAL WARNA SEMUA GAMBAR
+================================= */
+
+/* Gambar kategori */
+.category-image {
+  background: #e8f5ed !important;
+}
+
+.category-image img {
+  mix-blend-mode: normal !important;
+  filter: none !important;
+  opacity: 1 !important;
+  object-fit: contain !important;
+}
+
+/* Gambar paket Rising dan Montage */
+.package-card img {
+  background: #e8f5ed !important;
+  mix-blend-mode: normal !important;
+  filter: none !important;
+  opacity: 1 !important;
+  object-fit: contain !important;
+}
+
+/* Gambar banner layanan */
+.service-banner img {
+  background: #e8f5ed !important;
+  mix-blend-mode: normal !important;
+  filter: none !important;
+  opacity: 1 !important;
+  object-fit: contain !important;
+}
+
+/* Logo */
+.hero-logo {
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  opacity: 1 !important;
+}
