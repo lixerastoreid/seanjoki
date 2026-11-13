@@ -1,1 +1,486 @@
 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#061b12">
+  <meta name="description" content="Jasa Joki Mobile Legends terpercaya. Joki Rank, Gendong, Rising MLBB dan Montage.">
+  <title>JOKI MLBB — Premium Service</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="ambient ambient-one"></div>
+<div class="ambient ambient-two"></div>
+
+<header class="topbar">
+  <div class="nav-container">
+    <a class="brand" href="#" onclick="showPage('home');return false;">
+      <img src="logo.png" alt="Logo" class="brand-logo">
+      <span>JOKI<span class="brand-accent">MLBB</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#" class="nav-link active" data-page="home">Beranda</a>
+      <a href="#" class="nav-link" data-page="rank">Joki Rank</a>
+      <a href="#" class="nav-link" data-page="gendong">Joki Gendong</a>
+      <a href="#" class="nav-link" data-page="rising">Joki Rising</a>
+      <a href="#" class="nav-link" data-page="montage">Joki Montage</a>
+    </nav>
+
+    <a class="nav-order" href="#kategori" onclick="showPage('home')">Pesan Sekarang</a>
+  </div>
+</header>
+
+<main id="app">
+
+  <!-- ================= BERANDA ================= -->
+  <section class="page active" id="page-home">
+    <div class="hero">
+      <div class="hero-content">
+        <div class="eyebrow">
+          <span class="live-dot"></span>
+          MOBILE LEGENDS SERVICE
+        </div>
+        <h1>LEVEL UP YOUR<br><span>GAME.</span></h1>
+        <p>
+          Tingkatkan rank dan kemampuan akun Mobile Legends kamu
+          bersama layanan joki profesional.
+        </p>
+        <a href="#kategori" class="primary-btn" onclick="document.getElementById('kategori').scrollIntoView({behavior:'smooth'})">
+          Pilih Layanan <span>↗</span>
+        </a>
+        <div class="hero-stats">
+          <div><strong>04</strong><small>LAYANAN</small></div>
+          <div><strong>24/7</strong><small>ORDER ONLINE</small></div>
+          <div><strong>MLBB</strong><small>FOCUSED SERVICE</small></div>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="hero-glow"></div>
+        <img src="logo.png" alt="Joki MLBB" class="hero-logo">
+        <div class="hero-tag">PREMIUM SERVICE</div>
+      </div>
+    </div>
+
+    <div class="section-heading" id="kategori">
+      <div>
+        <span class="section-kicker">OUR SERVICES</span>
+        <h2>Pilih <span>Layanan</span></h2>
+        <p>Pilih kategori joki yang kamu butuhkan.</p>
+      </div>
+    </div>
+
+    <div class="category-grid">
+      <button class="category-card" onclick="showPage('rank')">
+        <div class="category-image">
+          <img src="jokirank.jpg" alt="Joki Rank">
+        </div>
+        <div class="category-info">
+          <span class="category-number">01 / SERVICE</span>
+          <h3>JOKI RANK</h3>
+          <p>Naikkan rank sesuai targetmu.</p>
+          <span class="card-arrow">↗</span>
+        </div>
+      </button>
+
+      <button class="category-card" onclick="showPage('gendong')">
+        <div class="category-image">
+          <img src="jokigendong.jpg" alt="Joki Gendong">
+        </div>
+        <div class="category-info">
+          <span class="category-number">02 / SERVICE</span>
+          <h3>JOKI GENDONG</h3>
+          <p>Main bersama joki profesional.</p>
+          <span class="card-arrow">↗</span>
+        </div>
+      </button>
+
+      <button class="category-card" onclick="showPage('rising')">
+        <div class="category-image">
+          <img src="jokimro.jpg" alt="Joki Rising MLBB">
+        </div>
+        <div class="category-info">
+          <span class="category-number">03 / SERVICE</span>
+          <h3>JOKI RISING MLBB</h3>
+          <p>Pilih paket rising sesuai kebutuhan.</p>
+          <span class="card-arrow">↗</span>
+        </div>
+      </button>
+
+      <button class="category-card" onclick="showPage('montage')">
+        <div class="category-image">
+          <img src="jokimontage.jpg" alt="Joki Montage">
+        </div>
+        <div class="category-info">
+          <span class="category-number">04 / SERVICE</span>
+          <h3>JOKI MONTAGE</h3>
+          <p>Montage hero pilihanmu.</p>
+          <span class="card-arrow">↗</span>
+        </div>
+      </button>
+    </div>
+
+    <div class="trust-strip">
+      <span>✦ PROSES MUDAH</span>
+      <span>✦ HARGA TRANSPARAN</span>
+      <span>✦ KONFIRMASI WHATSAPP</span>
+    </div>
+  </section>
+  
+  <!-- ================= JOKI RANK ================= -->
+  <section class="page service-page" id="page-rank">
+    <div class="page-heading">
+      <button class="back-btn" onclick="showPage('home')">← Kembali</button>
+      <span class="section-kicker">SERVICE 01</span>
+      <h1>JOKI <span>RANK</span></h1>
+      <p>Pilih rank awal dan rank tujuanmu.</p>
+    </div>
+
+    <div class="service-banner">
+      <img src="jokirank.jpg" alt="Joki Rank">
+      <div><strong>RANK BOOSTING</strong><small>Hitung harga berdasarkan setiap bintang.</small></div>
+    </div>
+
+    <div class="calculator-card" data-calculator="rank">
+      <div class="rank-select-grid">
+        <div class="rank-side">
+          <label>RANK AWAL</label>
+          <select id="rankStart" class="field">
+            <option value="Grandmaster">Grandmaster</option>
+            <option value="Epic">Epic</option>
+            <option value="Legend">Legend</option>
+            <option value="Mythic">Mythic</option>
+            <option value="Honor">Honor</option>
+            <option value="Glory">Glory</option>
+            <option value="Immortal">Immortal</option>
+          </select>
+
+          <div id="startTierWrap">
+            <label>PANGKAT AWAL</label>
+            <select id="startTier" class="field">
+              <option value="5">V</option>
+              <option value="4">IV</option>
+              <option value="3">III</option>
+              <option value="2">II</option>
+              <option value="1">I</option>
+            </select>
+          </div>
+
+          <label>BINTANG AWAL</label>
+          <select id="startStar" class="field"></select>
+        </div>
+
+        <div class="rank-arrow">↓</div>
+
+        <div class="rank-side">
+          <label>RANK TUJUAN</label>
+          <select id="rankEnd" class="field">
+            <option value="Grandmaster">Grandmaster</option>
+            <option value="Epic">Epic</option>
+            <option value="Legend">Legend</option>
+            <option value="Mythic">Mythic</option>
+            <option value="Honor" selected>Honor</option>
+            <option value="Glory">Glory</option>
+            <option value="Immortal">Immortal</option>
+          </select>
+
+          <div id="endTierWrap">
+            <label>PANGKAT TUJUAN</label>
+            <select id="endTier" class="field">
+              <option value="5">V</option>
+              <option value="4">IV</option>
+              <option value="3">III</option>
+              <option value="2">II</option>
+              <option value="1">I</option>
+            </select>
+          </div>
+
+          <label>BINTANG TUJUAN</label>
+          <select id="endStar" class="field"></select>
+        </div>
+      </div>
+
+      <div class="calc-result">
+        <span>ESTIMASI TOTAL HARGA</span>
+        <strong id="rankTotal">Rp 0</strong>
+        <small id="rankSummary">Pilih rank awal dan tujuan.</small>
+      </div>
+
+      <button class="primary-btn full-btn" onclick="prepareRankOrder('rank')">
+        Lanjutkan Pesanan ↗
+      </button>
+      <p class="small-note">Harga dihitung dengan penjumlahan setiap bintang yang dilewati.</p>
+    </div>
+  </section>
+
+  <!-- ================= JOKI GENDONG ================= -->
+  <section class="page service-page" id="page-gendong">
+    <div class="page-heading">
+      <button class="back-btn" onclick="showPage('home')">← Kembali</button>
+      <span class="section-kicker">SERVICE 02</span>
+      <h1>JOKI <span>GENDONG</span></h1>
+      <p>Pilih rank awal dan target rank yang kamu inginkan.</p>
+    </div>
+
+    <div class="service-banner">
+      <img src="jokigendong.jpg" alt="Joki Gendong">
+      <div><strong>PARTY BOOSTING</strong><small>Pilih target dan hitung total biaya.</small></div>
+    </div>
+
+    <div class="calculator-card" data-calculator="gendong">
+      <div class="rank-select-grid">
+        <div class="rank-side">
+          <label>RANK AWAL</label>
+          <select id="gendongStart" class="field">
+            <option value="Grandmaster">Grandmaster</option>
+            <option value="Epic">Epic</option>
+            <option value="Legend">Legend</option>
+            <option value="Mythic">Mythic</option>
+            <option value="Honor">Honor</option>
+            <option value="Glory">Glory</option>
+            <option value="Immortal">Immortal</option>
+          </select>
+
+          <div id="gendongStartTierWrap">
+            <label>PANGKAT AWAL</label>
+            <select id="gendongStartTier" class="field">
+              <option value="5">V</option><option value="4">IV</option>
+              <option value="3">III</option><option value="2">II</option>
+              <option value="1">I</option>
+            </select>
+          </div>
+          <label>BINTANG AWAL</label>
+          <select id="gendongStartStar" class="field"></select>
+        </div>
+
+        <div class="rank-arrow">↓</div>
+
+        <div class="rank-side">
+          <label>RANK TUJUAN</label>
+          <select id="gendongEnd" class="field">
+            <option value="Grandmaster">Grandmaster</option>
+            <option value="Epic">Epic</option>
+            <option value="Legend">Legend</option>
+            <option value="Mythic">Mythic</option>
+            <option value="Honor" selected>Honor</option>
+            <option value="Glory">Glory</option>
+            <option value="Immortal">Immortal</option>
+          </select>
+
+          <div id="gendongEndTierWrap">
+            <label>PANGKAT TUJUAN</label>
+            <select id="gendongEndTier" class="field">
+              <option value="5">V</option><option value="4">IV</option>
+              <option value="3">III</option><option value="2">II</option>
+              <option value="1">I</option>
+            </select>
+          </div>
+          <label>BINTANG TUJUAN</label>
+          <select id="gendongEndStar" class="field"></select>
+        </div>
+      </div>
+
+      <div class="calc-result">
+        <span>ESTIMASI TOTAL HARGA</span>
+        <strong id="gendongTotal">Rp 0</strong>
+        <small id="gendongSummary">Pilih rank awal dan tujuan.</small>
+      </div>
+
+      <button class="primary-btn full-btn" onclick="prepareRankOrder('gendong')">
+        Lanjutkan Pesanan ↗
+      </button>
+      <p class="small-note">Harga dihitung dengan penjumlahan setiap bintang yang dilewati.</p>
+    </div>
+  </section>
+
+  <!-- ================= RISING MLBB ================= -->
+  <section class="page service-page" id="page-rising">
+    <div class="page-heading">
+      <button class="back-btn" onclick="showPage('home')">← Kembali</button>
+      <span class="section-kicker">SERVICE 03</span>
+      <h1>JOKI <span>RISING MLBB</span></h1>
+      <p>Pilih paket rising yang kamu inginkan.</p>
+    </div>
+
+    <div class="package-grid" id="risingPackages">
+      <button class="package-card" onclick="selectPackage('rising','Area terbuka',30000,'areaterbuka.jpg',this)">
+        <img src="areaterbuka.jpg" alt="Area terbuka">
+        <span class="package-content"><strong>Area Terbuka</strong><b>Rp 30.000</b></span>
+      </button>
+
+      <button class="package-card" onclick="selectPackage('rising','Bracket area',40000,'bracketarea.jpg',this)">
+        <img src="bracketarea.jpg" alt="Bracket area">
+        <span class="package-content"><strong>Bracket Area</strong><b>Rp 40.000</b></span>
+      </button>
+
+      <button class="package-card" onclick="selectPackage('rising','Bracket kota',40000,'bracketkota.jpg',this)">
+        <img src="bracketkota.jpg" alt="Bracket kota">
+        <span class="package-content"><strong>Bracket Kota</strong><b>Rp 40.000</b></span>
+      </button>
+
+      <button class="package-card" onclick="selectPackage('rising','Bracket provinsi',40000,'bracketprovinsi.jpg',this)">
+        <img src="bracketprovinsi.jpg" alt="Bracket provinsi">
+        <span class="package-content"><strong>Bracket Provinsi</strong><b>Rp 40.000</b></span>
+      </button>
+
+      <button class="package-card" onclick="selectPackage('rising','Sub region',50000,'subregion.jpg',this)">
+        <img src="subregion.jpg" alt="Sub region">
+        <span class="package-content"><strong>Sub Region</strong><b>Rp 50.000</b></span>
+      </button>
+
+      <button class="package-card" onclick="selectPackage('rising','Bracket regional',50000,'bracketregional.png',this)">
+        <img src="bracketregional.png" alt="Bracket regional">
+        <span class="package-content"><strong>Bracket Regional</strong><b>Rp 50.000</b></span>
+      </button>
+
+      <button class="package-card" onclick="selectPackage('rising','Kejuaraan divisi',70000,'kejuaraandivisi.jpg',this)">
+        <img src="kejuaraandivisi.jpg" alt="Kejuaraan divisi">
+        <span class="package-content"><strong>Kejuaraan Divisi</strong><b>Rp 70.000</b></span>
+      </button>
+    </div>
+
+    <div class="selected-summary" id="risingSummary">
+      <span>PAKET TERPILIH</span>
+      <strong id="risingSelectedName">Belum memilih paket</strong>
+      <b id="risingSelectedPrice">Rp 0</b>
+      <button class="primary-btn full-btn" onclick="preparePackageOrder('rising')">Lanjutkan Pesanan ↗</button>
+    </div>
+  </section>
+  
+  <!-- ================= JOKI MONTAGE ================= -->
+  <section class="page service-page" id="page-montage">
+    <div class="page-heading">
+      <button class="back-btn" onclick="showPage('home')">← Kembali</button>
+      <span class="section-kicker">SERVICE 04</span>
+      <h1>JOKI <span>MONTAGE</span></h1>
+      <p>Pilih hero untuk montage kamu.</p>
+    </div>
+
+    <div class="package-grid montage-grid">
+      <button class="package-card" onclick="selectPackage('montage','Joki Montage All Hero',20000,'jokimontage.jpg',this)">
+        <img src="jokimontage.jpg" alt="All Hero Montage">
+        <span class="package-content">
+          <strong>All Hero</strong>
+          <b>Rp 20.000</b>
+        </span>
+      </button>
+
+      <button class="package-card" onclick="selectPackage('montage','Joki Montage Fanny - Free Edit',50000,'jokimontage.jpg',this)">
+        <img src="jokimontage.jpg" alt="Fanny Montage">
+        <span class="package-content">
+          <strong>Fanny</strong>
+          <small>FREE EDIT</small>
+          <b>Rp 50.000</b>
+        </span>
+      </button>
+
+      <button class="package-card" onclick="selectPackage('montage','Joki Montage Ling - Free Edit',50000,'jokimontage.jpg',this)">
+        <img src="jokimontage.jpg" alt="Ling Montage">
+        <span class="package-content">
+          <strong>Ling</strong>
+          <small>FREE EDIT</small>
+          <b>Rp 50.000</b>
+        </span>
+      </button>
+
+      <button class="package-card" onclick="selectPackage('montage','Joki Montage Lancelot - Free Edit',50000,'jokimontage.jpg',this)">
+        <img src="jokimontage.jpg" alt="Lancelot Montage">
+        <span class="package-content">
+          <strong>Lancelot</strong>
+          <small>FREE EDIT</small>
+          <b>Rp 50.000</b>
+        </span>
+      </button>
+    </div>
+
+    <div class="selected-summary" id="montageSummary">
+      <span>PAKET TERPILIH</span>
+      <strong id="montageSelectedName">Belum memilih paket</strong>
+      <b id="montageSelectedPrice">Rp 0</b>
+      <button class="primary-btn full-btn" onclick="preparePackageOrder('montage')">Lanjutkan Pesanan ↗</button>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FORM PEMESANAN ================= -->
+<div class="modal-overlay" id="orderModal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('orderModal')" aria-label="Tutup">×</button>
+    <span class="section-kicker">ORDER FORM</span>
+    <h2>Data <span>Pemesan</span></h2>
+    <p class="modal-description">Lengkapi data berikut untuk melanjutkan pembayaran.</p>
+
+    <div class="order-detail" id="orderDetail">
+      <span>DETAIL PESANAN</span>
+      <strong id="formProduct">-</strong>
+      <b id="formPrice">Rp 0</b>
+    </div>
+
+    <form id="customerForm">
+      <label for="customerName">Nama</label>
+      <input type="text" id="customerName" class="field" placeholder="Masukkan nama kamu" required maxlength="60">
+
+      <label for="customerPhone">No. WhatsApp</label>
+      <input type="tel" id="customerPhone" class="field" placeholder="08xxxxxxxxxx" required maxlength="16">
+
+      <button type="submit" class="primary-btn full-btn">
+        Lanjut ke Pembayaran ↗
+      </button>
+    </form>
+    <p class="small-note">Pastikan nama dan nomor WhatsApp sudah benar.</p>
+  </div>
+</div>
+
+<!-- ================= POPUP QR PEMBAYARAN ================= -->
+<div class="modal-overlay" id="paymentModal">
+  <div class="modal-box payment-box">
+    <button class="modal-close" onclick="closeModal('paymentModal')" aria-label="Tutup">×</button>
+    <span class="section-kicker">PAYMENT</span>
+    <h2>Pembayaran <span>QR</span></h2>
+    <p class="modal-description">Scan QR berikut menggunakan aplikasi pembayaran kamu.</p>
+
+    <div class="payment-total">
+      <span>TOTAL PEMBAYARAN</span>
+      <strong id="paymentTotal">Rp 0</strong>
+    </div>
+
+    <div class="qr-frame">
+      <img src="qr.jpg" alt="QR pembayaran admin" id="paymentQR">
+    </div>
+
+    <div class="payment-info">
+      <span>DETAIL PESANAN</span>
+      <strong id="paymentProduct">-</strong>
+      <small id="paymentCustomer">-</small>
+    </div>
+
+    <button class="primary-btn full-btn" id="confirmPaymentBtn" onclick="confirmPayment()">
+      Sudah Bayar — Konfirmasi WhatsApp ↗
+    </button>
+
+    <p class="small-note">Setelah membayar, tekan tombol konfirmasi untuk menghubungi admin. Pembayaran akan diperiksa oleh admin.</p>
+  </div>
+</div>
+
+<footer class="footer">
+  <img src="logo.png" alt="Logo" class="footer-logo">
+  <strong>JOKI<span>MLBB</span></strong>
+  <p>Premium Mobile Legends Service.</p>
+  <small>© 2026 JOKI MLBB. All Rights Reserved.</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
